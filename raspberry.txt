@@ -1,0 +1,132 @@
+
+import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BCM)
+#
+
+GPIO.setup(4,GPIO.OUT)
+while True:
+        GPIO.output(4,GPIO.HIGH)
+        print("LED ON")
+        time.sleep(1)
+        GPIO.output(4,GPIO.LOW)
+        print("LED OFF")
+        time.sleep(1)
+
+
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
+GPIO.setup(4,GPIO.OUT)
+GPIO.output(4,GPIO.LOW)
+print("LED OFF")
+
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
+GPIO.setup(4,GPIO.OUT)
+GPIO.output(4,GPIO.HIGH)
+print("LED ON")
+
+
+io.adafruit
+
+
+
+
+
+
+838895f0ece647689da894e86c12931f
+update:
+sudo apt-get update
+
+install git core:
+sudo apt-get install git-core
+
+git clone git://git.drogon.net/wiringPi
+
+
+cd wiringPi
+./build
+cd
+git clone https://github.com/blynkkk/blynk-library
+
+
+
+blynk connection:
+cd blynk-library/linux
+make clean all target=raspberry
+sudo ./blynk --token='token number'
+
+
+
+
+
+
+
+
+pushover.net
+token number:aq7qkohucjezoehs3i22m7v9ds8hne
+	     aq7qkohucjezoehs3i22m7v9ds8hne
+		ahkzq5ocst57k71x9g6dtjio1z99q7
+usr key:umy9etwkja2bk2mx659smvgn1gxy2b
+	umy9etwkja2bk2mx659smvgn1gxy2b
+
+import RPi.GPIO as gpio
+import time
+gpio.setmode(gpio.BCM)
+gpio.setwarnings(False)
+gpio.setup(4,gpio.IN)
+gpio.setup(17,gpio.OUT)
+
+while True:
+
+        if gpio.input(4)==True:
+                gpio.output(17,gpio.HIGH)
+                print("obstacle is detected")
+		conn = httplib.HTTPSConnection("api.pushover.net:443")
+		conn.request("POST", "/1/messages.json",
+		urllib.urlencode({
+		"token": "ahkzq5ocst57k71x9g6dtjio1z99q7",
+		"user": "umy9etwkja2bk2mx659smvgn1gxy2b",
+		"message": "alert...warning get an umbrella",
+		}), { "Content-type": "application/x-www-form-urlencoded" })
+		conn.getresponse()
+
+                while gpio.input(4)==True:
+                        time.sleep(0.5)
+        else:
+#               gpio.output(17,gpio.LOW)
+                print(" ")
+#               while gpio.input(4)==False:
+#                       time.sleep(0.5)
+
+
+
+
+
+
+adafruit DHT:
+sudo apt-get update
+sudo apt-get install git-core
+
+git clone https://github.com/adafruit/Adafruit_Python_DHT.git
+
+cd adafruit_python_DHT
+
+sudo apt-get install build-essential python dev
+
+sudo python setup.py install
+
+
+thinkspeak:
+
+write API key:J9GMEVLK6QGRIVL5
+https://api.thingspeak.com/update?api_key=J9GMEVLK6QGRIVL5&field1=tempature
+https://api.thingspeak.com/update?api_key=J9GMEVLK6QGRIVL5&field2=humi
+
+
+
+Flask web app:
