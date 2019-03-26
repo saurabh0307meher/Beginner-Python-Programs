@@ -1,0 +1,25 @@
+WAP to input list from user
+
+if number is even add 50 to it
+if number is odd number add 51 to it
+and display lists
+
+
+
+
+x = []
+num = input("Enter how many elements you want:")
+print ("Enter numbers in array: ")
+for i in range(int(num)):
+    n = input("num :")
+    x.append(int(n))
+print ("List: ",x)
+n=len(x)
+
+for i in range(0,n):
+    if x[i]%2==0:
+        x[i]=x[i]+50
+    else:
+        x[i]=x[i]+51
+        
+print ("List: ",x)
